@@ -30,13 +30,5 @@ const posts = [
       tags: ['inverno', 'piante', 'giardinaggio']
     }
   ];
-  
-  
-  const index = (req, res) => {
-    res.json({
-      conteggio: posts.length,
-      lista: posts
-    });
-  };
-  
-  module.exports = { index };
+
+  module.exports = posts;
