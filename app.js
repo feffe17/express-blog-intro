@@ -14,4 +14,6 @@ app.listen(port, () => {
 const postController = require('./controllers/post');
 
 app.get('/posts', postController.index);
+
+app.use(express.static('assets'));
   
